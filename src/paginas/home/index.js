@@ -16,7 +16,7 @@ useEffect(()=>{
     async function buscarNome(){
 
 
-        await firebase.database().ref('Alunos/1/Nome:').on('value',(snapshot) =>{
+        await firebase.database().ref('Alunos/1/Nome').on('value',(snapshot) =>{
                 
             setNome(snapshot.val())
     });
